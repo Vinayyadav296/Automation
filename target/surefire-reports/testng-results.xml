@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="13" passed="11" failed="1" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-19T23:40:10 IST" name="DemoSuite" finished-at="2023-09-19T23:40:10 IST" duration-ms="304">
+    <groups>
+      <group name="smoke">
+        <method signature="TestNGDemoA.smokeMethodB()[pri:0, instance:miscelleneous.TestNGDemoA@359f7cdf]" name="smokeMethodB" class="miscelleneous.TestNGDemoA"/>
+        <method signature="TestNGDemoD.smokeMethodA()[pri:0, instance:testng.TestNGDemoD@397fbdb]" name="smokeMethodA" class="testng.TestNGDemoD"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2023-09-19T23:40:10 IST" name="TestAnnotationsFirst" finished-at="2023-09-19T23:40:10 IST" duration-ms="150">
+      <class name="testng.SkipTestCase">
+        <test-method signature="skipTestCase()[pri:0, instance:testng.SkipTestCase@3febb011]" started-at="2023-09-19T23:40:10 IST" name="skipTestCase" finished-at="2023-09-19T23:40:10 IST" duration-ms="4" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Age can not be less than 18]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Age can not be less than 18
+at testng.SkipTestCase.skipTestCase(SkipTestCase.java:14)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- skipTestCase -->
+      </class> <!-- testng.SkipTestCase -->
+      <class name="miscelleneous.TestNGDemoA">
+        <test-method signature="demoA()[pri:0, instance:miscelleneous.TestNGDemoA@359f7cdf]" started-at="2023-09-19T23:40:10 IST" name="demoA" finished-at="2023-09-19T23:40:10 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demoA -->
+        <test-method signature="openBlogD(java.lang.String)[pri:0, instance:miscelleneous.TestNGDemoA@359f7cdf]" started-at="2023-09-19T23:40:10 IST" name="openBlogD" finished-at="2023-09-19T23:40:10 IST" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'URL' is required by @Test on method openBlogD but has not been marked @Optional or defined
+in C:\Users\dell\eclipse-workspace\QaFoxSelenium\testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'URL' is required by @Test on method openBlogD but has not been marked @Optional or defined
+in C:\Users\dell\eclipse-workspace\QaFoxSelenium\testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:879)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:911)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBlogD -->
+        <test-method signature="smokeMethodB()[pri:0, instance:miscelleneous.TestNGDemoA@359f7cdf]" started-at="2023-09-19T23:40:10 IST" name="smokeMethodB" finished-at="2023-09-19T23:40:10 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- smokeMethodB -->
+      </class> <!-- miscelleneous.TestNGDemoA -->
+      <class name="miscelleneous.TestNGDemoB">
+        <test-method is-config="true" signature="printBeforeMethod()[pri:0, instance:miscelleneous.TestNGDemoB@294425a7]" started-at="2023-09-19T23:40:10 IST" name="printBeforeMethod" finished-at="2023-09-19T23:40:10 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printBeforeMethod -->
+        <test-method signature="demoB()[pri:0, instance:miscelleneous.TestNGDemoB@294425a7]" started-at="2023-09-19T23:40:10 IST" name="demoB" finished-at="2023-09-19T23:40:10 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demoB -->
+        <test-method is-config="true" signature="printafterMethod()[pri:0, instance:miscelleneous.TestNGDemoB@294425a7]" started-at="2023-09-19T23:40:10 IST" name="printafterMethod" finished-at="2023-09-19T23:40:10 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printafterMethod -->
+        <test-method is-config="true" signature="printBeforeMethod()[pri:0, instance:miscelleneous.TestNGDemoB@294425a7]" started-at="2023-09-19T23:40:10 IST" name="printBeforeMethod" finished-at="2023-09-19T23:40:10 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printBeforeMethod -->
+        <test-method signature="printName()[pri:0, instance:miscelleneous.TestNGDemoB@294425a7]" started-at="2023-09-19T23:40:10 IST" name="printName" finished-at="2023-09-19T23:40:10 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printName -->
+        <test-method is-config="true" signature="printafterMethod()[pri:0, instance:miscelleneous.TestNGDemoB@294425a7]" started-at="2023-09-19T23:40:10 IST" name="printafterMethod" finished-at="2023-09-19T23:40:10 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printafterMethod -->
+      </class> <!-- miscelleneous.TestNGDemoB -->
+      <class name="testng.TestNGDemoF">
+        <test-method signature="demoF()[pri:0, instance:testng.TestNGDemoF@74fe5c40]" started-at="2023-09-19T23:40:10 IST" name="demoF" finished-at="2023-09-19T23:40:10 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demoF -->
+        <test-method is-config="true" signature="afterTestMethod()[pri:0, instance:testng.TestNGDemoF@74fe5c40]" started-at="2023-09-19T23:40:10 IST" name="afterTestMethod" finished-at="2023-09-19T23:40:10 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestMethod -->
+      </class> <!-- testng.TestNGDemoF -->
+    </test> <!-- TestAnnotationsFirst -->
+    <test started-at="2023-09-19T23:40:10 IST" name="TestAnnotationsSecond" finished-at="2023-09-19T23:40:10 IST" duration-ms="63">
+      <class name="testng.TestNGDemoD">
+        <test-method is-config="true" signature="beforeTestMethod()[pri:0, instance:testng.TestNGDemoD@397fbdb]" started-at="2023-09-19T23:40:10 IST" name="beforeTestMethod" finished-at="2023-09-19T23:40:10 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestMethod -->
+        <test-method signature="demoD()[pri:0, instance:testng.TestNGDemoD@397fbdb]" started-at="2023-09-19T23:40:10 IST" name="demoD" finished-at="2023-09-19T23:40:10 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demoD -->
+        <test-method signature="smokeMethodA()[pri:0, instance:testng.TestNGDemoD@397fbdb]" started-at="2023-09-19T23:40:10 IST" name="smokeMethodA" finished-at="2023-09-19T23:40:10 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- smokeMethodA -->
+      </class> <!-- testng.TestNGDemoD -->
+      <class name="miscelleneous.TestNGDemoC">
+        <test-method is-config="true" signature="beforeClassMethod()[pri:0, instance:miscelleneous.TestNGDemoC@3590fc5b]" started-at="2023-09-19T23:40:10 IST" name="beforeClassMethod" finished-at="2023-09-19T23:40:10 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClassMethod -->
+        <test-method signature="demoC()[pri:0, instance:miscelleneous.TestNGDemoC@3590fc5b]" started-at="2023-09-19T23:40:10 IST" name="demoC" finished-at="2023-09-19T23:40:10 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demoC -->
+        <test-method signature="printStatus()[pri:0, instance:miscelleneous.TestNGDemoC@3590fc5b]" started-at="2023-09-19T23:40:10 IST" name="printStatus" finished-at="2023-09-19T23:40:10 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printStatus -->
+        <test-method signature="printStream()[pri:0, instance:miscelleneous.TestNGDemoC@3590fc5b]" started-at="2023-09-19T23:40:10 IST" name="printStream" finished-at="2023-09-19T23:40:10 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printStream -->
+        <test-method is-config="true" signature="afterClassMethod()[pri:0, instance:miscelleneous.TestNGDemoC@3590fc5b]" started-at="2023-09-19T23:40:10 IST" name="afterClassMethod" finished-at="2023-09-19T23:40:10 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClassMethod -->
+      </class> <!-- miscelleneous.TestNGDemoC -->
+      <class name="testng.TestNGDemoE">
+        <test-method is-config="true" signature="beforeSuiteMethod()[pri:0, instance:testng.TestNGDemoE@33d512c1]" started-at="2023-09-19T23:40:10 IST" name="beforeSuiteMethod" finished-at="2023-09-19T23:40:10 IST" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuiteMethod -->
+        <test-method signature="demoE()[pri:0, instance:testng.TestNGDemoE@33d512c1]" started-at="2023-09-19T23:40:10 IST" name="demoE" finished-at="2023-09-19T23:40:10 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demoE -->
+        <test-method is-config="true" signature="afterSuiteMethod()[pri:0, instance:testng.TestNGDemoE@33d512c1]" started-at="2023-09-19T23:40:10 IST" name="afterSuiteMethod" finished-at="2023-09-19T23:40:10 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuiteMethod -->
+      </class> <!-- testng.TestNGDemoE -->
+    </test> <!-- TestAnnotationsSecond -->
+  </suite> <!-- DemoSuite -->
+</testng-results>

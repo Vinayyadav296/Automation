@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DemoSuite">
+	
+	<!-- Package level Test execution-->
+	<!--  
+	<test thread-count="5" name="TestAnnotationsFirst">
+		<packages>
+	<package name="testng"></package>
+		</packages>
+		</test>
+		-->
+
+	<test thread-count="5" name="TestAnnotationsFirst">
+		<classes>
+			<class name="miscelleneous.TestNGDemoA" />
+			<class name="miscelleneous.TestNGDemoB" />
+
+			<class name="testng.TestNGDemoF" />
+			<class name="testng.SkipTestCase" />
+
+		</classes>
+	</test> <!--
+	TestAnnotations -->
+
+	<test thread-count="5" name="TestAnnotationsSecond">
+	<classes>
+		<class name="miscelleneous.TestNGDemoC" />
+		<class name="testng.TestNGDemoD" />
+		<class name="testng.TestNGDemoE" />
+	</classes>
+	</test>
+
+</suite> <!--
+DemoSuite -->

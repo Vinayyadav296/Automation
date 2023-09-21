@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="SmokyTest">
+       <!-- This is to run the smoke methods or test cases only-->
+		<groups>
+			<run>
+				<include name="smoke"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="testng.TestNGDemoE" />
+			<class name="testng.TestNGDemoF" />
+			<class name="testng.TestNGDemoD" />
+			<class name="testng.SkipTestCase" />
+			<class name="miscelleneous.TestNGDemoA" />
+			<class name="miscelleneous.TestNGDemoB" />
+			<class name="miscelleneous.TestNGDemoC" />
+		</classes>
+	</test> <!--
+	SmokyTest -->
+</suite> <!--
+Suite -->
